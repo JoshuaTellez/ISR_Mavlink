@@ -44,7 +44,7 @@ top (int argc, char **argv)
      * Preprocessing variables in config file
      */
     string line;
-    ifstream config ("config.txt");
+    ifstream config ("config.cfg");
     if(config.is_open()){
         int i = 1;
         while(getline(config,line)){
@@ -53,12 +53,11 @@ top (int argc, char **argv)
                 case 1:
                 {
                     poll_rate = stoi(line);
-                    printf("Polling at: %d\n",poll_rate);
+                    printf("Polling rate: %d\n",poll_rate);
                 }
                 case 2:
                 {
                     port = line;
-                    printf("Port: %s", port);
                     break;
                 }
             }

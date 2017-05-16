@@ -5,3 +5,4 @@ CMakeFiles/*
 CMakeCache.txt
 Makefile
 ISR_Mavlink.cbp
+.idea/workspace.xml
